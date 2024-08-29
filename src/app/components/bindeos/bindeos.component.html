@@ -1,0 +1,26 @@
+<h1>BINDEOS</h1>
+
+<!-- binding / bindeo -->
+<!-- Desde TS al HTML -->
+
+<p>Me llamo {{ nombre }}</p>
+
+<!-- Desde HTML al TS a modo de INPUT -->
+<!-- double binding / bindeo doble [()]-->
+
+<input [(ngModel)]="apellido">
+
+<p>{{ apellido }}</p>
+
+<!-- binding / bindeo -->
+<!-- Atributos HTML -->
+<img 
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/UTN_logo.jpg/270px-UTN_logo.jpg"
+height="50px"
+>
+
+<img [src]="imagen" height="50px"/>
+
+<!-- bindeo de eventos -->
+<!-- Desde HTML a TS -->
+<button (click)="mostrarDatos()"> Mostrar</button>
